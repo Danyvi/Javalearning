@@ -40,8 +40,23 @@ public class Main {
 
 		System.out.println("The total price for your " + healthyBurger.getName() + " is: " + healthyBurger.getHamburgerTotalPrice());
 
+		System.out.println("\n");
 		///////
 
+		DeluxeBurger deluxeBurger = new DeluxeBurger("Italian roll", "scottish");
+
+		System.out.println("The name of your burger is " + deluxeBurger.getName());
+		System.out.println("Your burger is using " + deluxeBurger.getBreadRollType() + " bread");
+		System.out.println("Your burger is using " + deluxeBurger.getMeat() + " meat");
+
+		System.out.println("\n");
+
+		System.out.println("The price for your addons ("
+				+ deluxeBurger.getAddon1DeluxeName() + ", "
+				+ deluxeBurger.getAddon2DeluxeName() + ") is "
+				+ deluxeBurger.getAddonsDeluxePrice());
+
+		System.out.println("The total price for your " + deluxeBurger.getName() + " is: " + deluxeBurger.getHamburgerTotalPrice());
 
 
 
